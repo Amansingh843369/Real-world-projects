@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bOOTSTRAP.css"/>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding:0;margin:0; box-sizing: border-box;
+    }
+    .student{
+         margin-top:10rem;
+    }
+    .tableboy{
+      display:flex;
+      justify-content:space-evenly;
+    }
+</style>
+<body> 
+
+   <div id="paste"></div>
+
+<div class="container  student">
+    <table class="table table-hover  table-bordered table-responsive" >
+     
+        <thead>
+            <tr>
+              <th>Sr no.</th>
+              <th style="width:20%">First</th>
+              <th scope="col" style="width:20%">Last</th>
+              <th scope="col" style="width:20%">Handler</th>
+              <th scope="col" style="width:30%">Crud operator</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="mark">
+              <th scope="row">1</th>
+              <td  id="n">Mark</td>
+              <td id="p">Otto</td>
+              <td id="handler">@mdo</td>
+              <td class="tableboy">
+                <button type="button" class="btn btn-primary" id="create" data-bs-toggle="modal" data-bs-target="#CreateModal">Create</button>
+                <button type="button" class="btn btn-warning "  data-bs-toggle="modal" data-bs-target="#exampleModal" id="edit" onclick="PUB()">Edit</button>
+                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#DeleteModal">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td class="tableboy">
+                <button type="button" class="btn btn-primary">Create</button>
+                <button type="button" class="btn btn-warning">Edit</button>
+                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-danger" >Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>wave</td>
+              <td>@twitter</td>
+              <td class="tableboy">
+                <button type="button" class="btn btn-primary">Create</button>
+                <button type="button" class="btn btn-warning">Edit</button>
+                <button type="button" class="btn btn-success">Update</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+                <th scope="row">4</th>
+                <td>Aman</td>
+                <td>Singh</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>Sumit</td>
+                <td>Singh</td>
+                <td>@Whatsapp</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">6</th>
+                <td>Brijesh</td>
+                <td>Pandey</td>
+                <td>@Telegram</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">7</th>
+                <td>khaby</td>
+                <td>lame</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">8</th>
+                <td>vaishali</td>
+                <td>gogat</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">9</th>
+                <td>ROhan</td>
+                <td>jeppe</td>
+                <td>@line</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+                <tr>
+                <th scope="row">10</th>
+                <td>rahul</td>
+                <td>kanojiya</td>
+                <td>@twello</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">11</th>
+                <td>nishit</td>
+                <td>gupta</td>
+                <td>@sharchat</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">12</th>
+                <td>JOhn</td>
+                <td>garet</td>
+                <td>@Signal</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">13</th>
+                <td>Scobby</td>
+                <td>papa</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">14</th>
+                <td>Ding</td>
+                <td>popee</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">15</th>
+                <td>paresh</td>
+                <td>jaah</td>
+                <td>@Linkedin</td>
+                <td class="tableboy">
+                  <button type="button" class="btn btn-primary">Create</button>
+                  <button type="button" class="btn btn-warning">Edit</button>
+                  <button type="button" class="btn btn-success">Update</button>
+                  <button type="button" class="btn btn-danger">Delete</button>
+                </td>
+              </tr>
+
+
+              <tr id="menu"></tr>
+
+
+          </tbody>
+      </table>
+
+
+</div>
+
+
+
+<!-- create Modal -->
+<form action="" id="createupdate">
+
+  <div class="modal fade " id="CreateModal" >
+    <div class="modal-dialog  modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create a row</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- main content  deleting a row -->
+          <div class="form-floating mb-3">
+            <input type="name" class="form-control" id="floatingInput" placeholder="name">
+            <label for="floatingInput" id="nameedit">Name</label>
+          </div>
+          <div class="form-floating">
+            <input type="Last" class="form-control" id="floatingPassword" placeholder="last">
+            <label for="floatingPassword">Last</label>
+          </div>
+<br>
+
+          <div class="form-floating">
+            <input type="Last" class="form-control" id="floatingPassword" placeholder="last">
+            <label for="floatingPassword">Handler</label>
+          </div>
+  
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary" onclick="CreateHogaya()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </form>
+
+<!-- end create model -->
+
+
+
+<!-- Modal -->
+<form action="" id="signup">
+
+<div class="modal fade " id="exampleModal" >
+  <div class="modal-dialog  modal-dialog-centered ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit a row</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- main content editing a row -->
+        <div class="form-floating mb-3">
+          <input type="name" class="form-control" id="floatingInput" placeholder="name">
+          <label for="floatingInput" id="nameedit">Name</label>
+        </div>
+        <div class="form-floating">
+          <input type="Last" class="form-control" id="floatingPassword" placeholder="last">
+          <label for="floatingPassword">Last</label>
+        </div>
+        <div class="form-floating">
+          <input type="Last" class="form-control" id="floatingPassword" placeholder="last">
+          <label for="floatingPassword">Handler</label>
+        </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="EditHogaya()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</form>
+
+
+
+<!-- Delete  -->
+<form action="" id="Delete">
+
+  <div class="modal fade " id="DeleteModal" >
+    <div class="modal-dialog  modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delete a row</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- main content  deleting a row -->
+          <p>Are you sure want to delete a row ?</p>
+  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary" onclick="DeleteHogaya()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </form>
+<!-- End Delete -->
+
+
+
+
+<script>
+   function aman(){
+    const ab =document.getElementById("mark").setAttribute('style',' background-color:brown;');
+    console.log(ab);
+  }
+ 
+
+  // function PUB(){
+  //   console.log("you cannot change serial no..");
+  //   const bc=document.querySelector('#n');
+  // bc.style.fontWeight='bold';
+  // bc.innerHTML="AMAN";
+  // console.log(bc);
+
+
+  // const kk=document.querySelector('#p');
+  //  kk.innerHTML="Singh";
+  // console.log(kk);
+
+  // };
+
+function EditHogaya(){
+   let edit =document.querySelector("#signup");
+  //  console.log(edit);
+
+
+     let ccc=edit.elements[1];
+     let bbb=edit.elements[2];
+     let ddd=edit.elements[3];
+
+   let  fullname =ccc.value;
+   let  Lastname =bbb.value;
+   let  handler_name =ddd.value;
+
+
+   console.log(fullname);
+   console.log(Lastname);
+   console.log(handler_name);
+
+
+
+  let  div_tag =document.getElementById("n");
+  div_tag.textContent=fullname;
+
+  let  div_tags =document.getElementById("p");
+  div_tags.textContent=Lastname;
+
+  let  div_tagss =document.getElementById("handler");
+  div_tagss.textContent=handler_name;
+
+  // let  div_tag =document.getElementById("n");
+  //   let li =document.createElement('h2');
+  //    li.textContent=fullname;
+  //    li.setAttribute('style','color:red ;text-align:center; margin-top:2rem;');
+  //   div_tag.append(li);
+  
+};
+
+function DeleteHogaya(){
+  let delete_aman = document.querySelector("#mark");
+  // delete_aman.removeChild(delete_aman.children[0]);
+  //  delete_aman.removeChild(delete_aman.children[1]);
+  //  delete_aman.removeChild(delete_aman.children[2]);
+  //  delete_aman.removeChild(delete_aman.children[3]);
+  //  delete_aman.removeChild(delete_aman.children[4]);
+  //  delete_aman.removeChild(delete_aman.children[5]);
+
+let first =delete_aman.firstElementChild;
+while(first){
+  first.remove();
+  first =delete_aman.firstElementChild;
+  console.log("first row delete in database");
+
+}
+
+};
+
+function CreateHogaya(){
+
+  let access =document.querySelector("#createupdate");
+
+    let acc=access.elements[1];
+     let bcc=access.elements[2];
+     let cdd=access.elements[3];
+
+     let  full =acc.value;
+   let  Last =bcc.value;
+   let  hand =cdd.value;
+
+
+   console.log(full);
+   console.log(Last);
+   console.log(hand);
+
+ 
+  
+  let menu =document.querySelector("#menu");
+  let  create_num =document.createElement("th");
+ create_num.textContent ="16";
+ menu.appendChild(create_num);
+
+
+ if(CreateHogaya==2){
+     alert("ok");
+   } else{
+     alert("fake");
+   }
+
+let  create_aman =document.createElement("td");
+ create_aman.textContent =full;
+ menu.appendChild(create_aman);
+
+ let  create_singh =document.createElement("td");
+ create_singh.textContent =Last;
+ menu.appendChild(create_singh);
+
+ let  create_handler =document.createElement("td");
+ create_handler.textContent =hand;
+ menu.appendChild(create_handler);
+
+
+ let  create_button =document.createElement("td");
+create_button.setAttribute('class','tableboy');
+ let ap=document.createElement('BUTTON');
+  let text =document.createTextNode('Create');
+ ap.appendChild(text);
+ ap.setAttribute('type','button');
+ ap.setAttribute("class","btn btn-primary");
+ create_button.appendChild(ap);
+ menu.appendChild(create_button);
+
+
+  let pa=document.createElement('BUTTON');
+  let patch=document.createTextNode('Read');
+ pa.appendChild(patch);
+ pa.setAttribute('type','button');
+ pa.setAttribute("class","btn btn-warning");
+create_button.appendChild(pa);
+menu.appendChild(create_button);
+
+
+let kya=document.createElement('BUTTON');
+  let  bol=document.createTextNode('Update');
+ kya.appendChild(bol);
+ kya.setAttribute('type','button');
+ kya.setAttribute("class","btn btn-success");
+create_button.appendChild(kya);
+menu.appendChild(create_button);
+
+
+let vow=document.createElement('BUTTON');
+  let bow=document.createTextNode('delete');
+ vow.appendChild(bow);
+ vow.setAttribute('type','button');
+ vow.setAttribute("class","btn btn-danger");
+create_button.appendChild(vow);
+menu.appendChild(create_button);
+};
+
+
+
+</script>
+
+
+
+  <script src="bOOTSTRAP.js"></script>
+ 
+</body>
+</html>
+
